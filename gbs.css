@@ -1,0 +1,9 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,legend,p,blockquote,caption,th,td,iframe,img{margin:0;padding:0;border:0;}
+body{font:13px/1.308 verdana,tahoma,geneva,sans-serif;color:#555;background:#fff url(bg.gif);}
+
+a:link, a:visited {text-decoration:none;color:#009ddd;}	
+a:hover {text-decoration:none;border-bottom:1px dotted #009ddd;}
+
+#container {width:760px;margin:0 auto;background:none;}
+
+h1 {margin:1.063em 0;font-size:16px;line-height:1.063;}
