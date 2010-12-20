@@ -1,40 +1,36 @@
 <?php
-
-	require('Browscap.php');
+	
 	require('gbs.php');
 	
-	$bc = new Browscap('cache');
-	$bc->localFile = 'php_browscap.ini';
-	$data = $bc->getBrowser();
-	
-	$gbs = new Monospaced_GBS();
-	$grade = $gbs->getGrade($data);
-
-?>
-
-<!DOCTYPE html>
+?><!DOCTYPE html>
 <html lang="en-gb">
 	<head>
 		<meta charset="utf-8" />
     	<title>GBS experiments</title>
+
 		<?php
-			if($grade != 'C') {
+			if(!isset($gbs) || $gbs != 'C-grade') {
 		?>
+		
     	<link rel="stylesheet" href="gbs.css" />
+
 		<?php
 			}
 		?>
+		
 	</head>
 	<body>
-  		<div id="container">
-			
-			<h1><a href="http://developer.yahoo.com/yui/articles/gbs/">GBS</a> experiments</h1>
+  		<div id="container">	
+			<h1>Graded Browser Support</h1>
 			
 			<?php
-				echo '<p>', $data->Browser,' ',$data->Version,'</p>';
+			
+				if(isset($gbs)) {
+					echo '<p>Your browser receives ', $gbs,' support.</p>';
+				}
+				
 			?>
 			
-		</div> <!-- end container -->
-  	
+		</div>
 	</body>
 </html>
