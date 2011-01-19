@@ -62,7 +62,7 @@ if (isset($_COOKIE['gbs'])) {
 	$data = $bc->getBrowser();
 	$browser = $data->Browser;
 	$version = $data->Version;
-	if ($browser == 'IE' &amp;&amp; $version &lt; 5 ||
+	if ($browser == 'IE' &amp;&amp; $version &lt; 6 ||
 	    $browser == 'Safari' &amp;&amp; $version &lt; 3 ||
 	    $browser == 'Firefox' &amp;&amp; $version &lt; 3 ||
 	    $browser == 'Opera' &amp;&amp; $version &lt; 9.5 ||

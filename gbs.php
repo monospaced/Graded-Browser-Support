@@ -16,7 +16,7 @@
 		$browser = $data->Browser;
 		$version = $data->Version;
 		
-		if ($browser == 'IE' && $version < 5 ||
+		if ($browser == 'IE' && $version < 6 ||
 			$browser == 'Safari' && $version < 3 ||
 			$browser == 'Firefox' && $version < 3 ||
 			$browser == 'Opera' && $version < 9.5 ||
