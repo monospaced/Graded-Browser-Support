@@ -23,7 +23,7 @@
   		<div id="container">
 			<h1>Graded Browser Support</h1>
 
-			<p><a href="https://github.com/monospaced/Graded-Browser-Support">https://github.com/monospaced/Graded-Browser-Support</a></p>
+			<p><a href="https://github.com/monospaced/Graded-Browser-Support">github.com/monospaced/Graded-Browser-Support</a></p>
 
 			<div class="line-length">
 
